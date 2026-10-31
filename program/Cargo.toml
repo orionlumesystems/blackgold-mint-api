@@ -1,0 +1,25 @@
+[package]
+name = "blackgold-mint-program"
+description.workspace = true
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+repository.workspace = true
+readme.workspace = true
+keywords.workspace = true
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "blackgold_mint"
+
+[features]
+default = []
+
+[dependencies]
+blackgold-mint-api.workspace = true
+solana-program.workspace = true
+solana-security-txt.workspace = true
+spl-token.workspace = true
+steel.workspace = true

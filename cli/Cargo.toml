@@ -1,0 +1,23 @@
+[package]
+name = "blackgold-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+repository.workspace = true
+keywords.workspace = true
+publish = false
+
+[features]
+no-entrypoint = []
+default = []
+
+[dependencies]
+anyhow.workspace = true
+bincode = "1.3.3"
+blackgold-mint-api = { path = "../api" }
+solana-client.workspace = true
+solana-sdk.workspace = true
+steel.workspace = true
+tokio.workspace = true

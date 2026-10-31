@@ -1,0 +1,128 @@
+{
+    "version": "0.1.3",
+    "name": "blackgold_mint",
+    "instructions": [
+        {
+            "name": "init",
+            "discriminant": {
+                "type": "u8",
+                "value": 0
+            },
+            "docs": [
+                "Initializes the authority account.",
+                "Authority PDA seeds: [\"authority\"]."
+            ],
+            "accounts": [
+                {
+                    "name": "signer",
+                    "isMut": true,
+                    "isSigner": true
+                },
+                {
+                    "name": "authority",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "systemProgram",
+                    "isMut": false,
+                    "isSigner": false
+                }
+            ],
+            "args": []
+        },
+        {
+            "name": "mint_blackgold",
+            "discriminant": {
+                "type": "u8",
+                "value": 1
+            },
+            "docs": [
+                "Mints new BLKG tokens to the treasury.",
+                "Authority PDA seeds: [\"authority\"]."
+            ],
+            "accounts": [
+                {
+                    "name": "signer",
+                    "isMut": true,
+                    "isSigner": true
+                },
+                {
+                    "name": "authority",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "mint",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "to",
+                    "isMut": true,
+                    "isSigner": false
+                },
+                {
+                    "name": "tokenProgram",
+                    "isMut": false,
+                    "isSigner": false,
+                    "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+                }
+            ],
+            "args": [
+                {
+                    "name": "amount",
+                    "type": "u64"
+                }
+            ]
+        }
+    ],
+    "accounts": [
+        {
+            "name": "Authority",
+            "discriminator": [
+                100,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "docs": [
+                "Account which has the mint authority for the BLKG token."
+            ],
+            "type": {
+                "kind": "struct",
+                "fields": [
+                    {
+                        "name": "last_mint_at",
+                        "type": "u64"
+                    }
+                ]
+            }
+        }
+    ],
+    "errors": [
+        {
+            "code": 0,
+            "name": "MaxAmountExceeded",
+            "msg": "Max amount exceeded"
+        },
+        {
+            "code": 1,
+            "name": "MaxSupplyExceeded",
+            "msg": "Max supply exceeded"
+        },
+        {
+            "code": 2,
+            "name": "MintFrequencyExceeded",
+            "msg": "Mint frequency exceeded"
+        }
+    ],
+    "metadata": {
+        "address": "mnt6SKo4zUvnG7ExPuh77EYxrVF65Stud4tPBH6dsk7.json",
+        "origin": "steel"
+    }
+}
