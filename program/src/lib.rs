@@ -61,7 +61,7 @@ entrypoint!(process_instruction);
 security_txt! {
     name: "BLKG Mint",
     project_url: "https://blackgold.supply",
-    contacts: "email:druscilla2024@gmail.com",
+    contacts: "email:orionlumesystems@gmail.com",
     policy: "",
     preferred_languages: "en",
     source_code: "https://github.com/orionlumesystems/blackgold-mint-api"

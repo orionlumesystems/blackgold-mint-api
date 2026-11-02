@@ -122,7 +122,6 @@ pub fn process_mint_token(accounts: &[AccountInfo<'_>], data: &[u8]) -> ProgramR
     //* Token program (spl token program)
     token_program.is_program(&spl_token::ID)?;
 
-
     // Check max mint amount.
     if amount > MAX_MINT_AMOUNT {
         return Err(trace(
@@ -176,7 +175,7 @@ pub fn process_mint_token(accounts: &[AccountInfo<'_>], data: &[u8]) -> ProgramR
         authority_info,
         token_program,
         amount,
-        &[MINT_AUTHORITY],
+        &[MINT_AUTHORITY_SEED],
     )?;
 
     Ok(())

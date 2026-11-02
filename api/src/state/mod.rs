@@ -26,5 +26,5 @@ pub enum BlackgoldAccount {
 // Derives the PDA used as the mint authority.
 //
 pub fn mint_authority_pda() -> (Pubkey, u8) {
-    Pubkey::find_program_address(&[MINT_AUTHORITY], &crate::ID)
+    Pubkey::find_program_address(&[MINT_AUTHORITY_SEED], &crate::ID)
 }

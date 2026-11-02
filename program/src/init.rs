@@ -56,7 +56,7 @@ pub fn process_init(accounts: &[AccountInfo<'_>], _data: &[u8]) -> ProgramResult
     authority_info
         .is_empty()?
         .is_writable()?
-        .has_seeds(&[MINT_AUTHORITY], &blackgold_mint_api::ID)?;
+        .has_seeds(&[MINT_AUTHORITY_SEED], &blackgold_mint_api::ID)?;
 
     //* System Program
     system_program.is_program(&system_program::ID)?;
@@ -67,7 +67,7 @@ pub fn process_init(accounts: &[AccountInfo<'_>], _data: &[u8]) -> ProgramResult
         system_program,
         signer_info,
         &blackgold_mint_api::ID,
-        &[MINT_AUTHORITY],
+        &[MINT_AUTHORITY_SEED],
     )?;
 
     //* Interpret this account's data buffer as a MintAuthority struct, but only if it is owned by my program.

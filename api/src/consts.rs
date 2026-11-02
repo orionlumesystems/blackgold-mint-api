@@ -17,7 +17,7 @@ pub const MIN_SLOTS_BETWEEN_MINT: u64 = 150;
 pub const MAX_SUPPLY: u64 = ONE_OUR_TOKEN * 21_000_000;
 
 /// The seed of the automation account PDA. (Seed of mint authority)
-pub const MINT_AUTHORITY: &[u8] = b"authority";
+pub const MINT_AUTHORITY_SEED: &[u8] = b"mint_authority";
 
 /// The address of the mint account. (Account of token)
 pub const MINT_ADDRESS: Pubkey = pubkey!("BLKGmSnWUj7EYirCirqgnS1Wvi3JwbCbHk2Ws2baLuNt");
