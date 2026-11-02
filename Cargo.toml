@@ -33,6 +33,10 @@ tokio = { version = "1.37.0", features = ["full"] }
 overflow-checks = true
 lto = "fat"
 codegen-units = 1
+# ADDED LATER
+opt-level = "z"
+panic = "abort"
+strip = true
 
 [profile.release.build-override]
 opt-level = 3
