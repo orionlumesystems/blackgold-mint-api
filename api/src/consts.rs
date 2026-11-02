@@ -22,5 +22,5 @@ pub const MINT_AUTHORITY_SEED: &[u8] = b"mint_authority";
 /// The address of the mint account. (Account of token)
 pub const MINT_ADDRESS: Pubkey = pubkey!("BLKGmSnWUj7EYirCirqgnS1Wvi3JwbCbHk2Ws2baLuNt");
 
-/// The treasury address allowed to request a mint. (Account of treasury)
+/// The treasury address allowed to request a mint. (Account of treasury) (Authority)
 pub const TREASURY_ADDRESS: Pubkey = pubkey!("treo2Q28ihT6e6T73dMoQGwYrsFDr54aNruVVMWzqXz");

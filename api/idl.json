@@ -10,7 +10,7 @@
             },
             "docs": [
                 "Initializes the authority account.",
-                "Authority PDA seeds: [\"authority\"]."
+                "Authority PDA seeds: [\"mint_authority\"]."
             ],
             "accounts": [
                 {
@@ -38,8 +38,8 @@
                 "value": 1
             },
             "docs": [
-                "Mints new BLKG tokens to the treasury.",
-                "Authority PDA seeds: [\"authority\"]."
+                "Mints BLKG tokens to the treasury.",
+                "Authority PDA seeds: [\"mint_authority\"]."
             ],
             "accounts": [
                 {
@@ -91,7 +91,7 @@
                 0
             ],
             "docs": [
-                "Account which has the mint authority for the BLKG token."
+                "Program authority account."
             ],
             "type": {
                 "kind": "struct",
@@ -122,7 +122,7 @@
         }
     ],
     "metadata": {
-        "address": "mnt6SKo4zUvnG7ExPuh77EYxrVF65Stud4tPBH6dsk7.json",
+        "address": "mnt6SKo4zUvnG7ExPuh77EYxrVF65Stud4tPBH6dsk7",
         "origin": "steel"
     }
 }
