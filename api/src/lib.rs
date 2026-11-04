@@ -14,5 +14,5 @@ pub mod prelude {
 
 use steel::*;
 
-// Mint Authority (Program ID)
+// Mint Program (Program ID)
 declare_id!("mnt6SKo4zUvnG7ExPuh77EYxrVF65Stud4tPBH6dsk7");

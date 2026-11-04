@@ -137,6 +137,7 @@ pub fn process_mint_token(accounts: &[AccountInfo<'_>], data: &[u8]) -> ProgramR
 
     // Check remaining max supply. By checking current supply and substracting it with max supply
     let remaining_supply = MAX_SUPPLY.saturating_sub(mint.supply());
+    
     if amount > remaining_supply {
         return Err(trace(
             format!(

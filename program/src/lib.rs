@@ -57,12 +57,11 @@ pub fn process_instruction(
 
 entrypoint!(process_instruction);
 
-//TODO
 security_txt! {
     name: "BLKG Mint",
     project_url: "https://blackgold.supply",
     contacts: "email:orionlumesystems@gmail.com",
-    policy: "",
+    policy: "https://github.com/orionlumesystems/blackgold-mint-api/blob/main/SECURITY.md",
     preferred_languages: "en",
     source_code: "https://github.com/orionlumesystems/blackgold-mint-api"
 }
