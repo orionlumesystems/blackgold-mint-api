@@ -1,7 +1,6 @@
 // -------------------------------
 // mod.rs module
 // -------------------------------
-
 mod mint_authority;
 
 pub use mint_authority::*;
